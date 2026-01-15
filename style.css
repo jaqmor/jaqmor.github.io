@@ -34,6 +34,8 @@ html, body {
 	button {
 		background-color: #bd9e82;
 		border-radius: 5px;
+	/*	width: auto;
+  	height: auto;*/
 	}
 
 	img {
@@ -47,6 +49,7 @@ html, body {
 	}
 
 	table { 
+	  table-layout: fixed;
 	  width: 	90%;
 	  margin: 0px auto;
 	}
@@ -62,7 +65,7 @@ html, body {
 	  height: 100%;
 	  width: 100%;
 	}
-
+  
 	.header {
 		position: fixed;
 		top: 5%;
