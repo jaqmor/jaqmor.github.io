@@ -1,0 +1,116 @@
+html, body {
+    margin: 0;
+    height: 200vh;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #213d37;
+    text-align: center;
+  }
+
+  h1, h3, p {
+  	color: #d0d0ce;
+  	text-align: left;
+  	padding-right: 100px;
+  	padding-left: 100px;
+  }
+
+  h1 {
+  	padding-top: 50px;
+  	font-weight: normal;
+  }
+
+  h3 {
+  	font-weight: normal;
+  }
+
+  a { 
+  	text-decoration: none;
+    text-align: center;
+    /*padding: 20px;*/
+	}
+
+	button {
+		background-color: #bd9e82;
+		border-radius: 5px;
+	}
+
+	table, th, td {
+  	border: solid 1px black;
+    border-collapse: collapse;
+	}
+
+	table { 
+	  width: 	90%;
+	  margin: 0px auto;
+	}
+
+	.table-container {
+	  flex-shrink: 1;
+	  overflow-y: auto;
+	}
+
+	.container {
+	  display: flex;
+	  flex-direction: column;
+	  height: 100%;
+	  width: 100%;
+	}
+
+	.header {
+		position: fixed;
+		top: 5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 60px;
+	  text-align: right;
+	  color: #d0d0ce;
+	  font-size: 30px;
+	}
+
+  #text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    white-space: nowrap;
+    font-size: 100px; /* base size for measuring */
+    color: #aa4c0f;
+    pointer-events: none;
+  }
+ 
+  .scroll-spacer {
+  	height: 100vh;
+  }
+
+  .marquee {
+  	position: fixed;
+  	bottom: 0;
+  	width: 100%;
+  	overflow: hidden;
+  	background: #bd9e82;
+  	border-top: 1px solid #222;
+  }
+
+  .marquee__items {
+  	display: flex;
+  	width: max-content;
+  	animation: marquee 25s linear infinite;
+  }
+
+  .marquee span {
+  	white-space: nowrap;
+  	font-size: 24px;
+  	padding-right: 2rem;
+  	color: black;
+  }
+
+  @keyframes marquee {
+  	from {
+  		transform: translateX(0);
+  	}
+  	to {
+  		transform: translateX(-50%);
+  	}
+  }
